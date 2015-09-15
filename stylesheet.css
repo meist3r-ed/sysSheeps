@@ -1,4 +1,64 @@
+@font-face {
+    font-family: Eurofurence;
+    src: url("assets/fonts/eurofurence.ttf");
+}
+
 html {
     height: 100vh;
     width: 100vw;
+}
+
+#start {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #333333;
+}
+
+#background {
+    z-index: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("assets/imgs/bg.jpg");
+    background-size: cover;
+    filter: blur(5px);
+}
+
+#glass_frame {
+    z-index: 1;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    filter: opacity(60%);
+}
+
+#glass_text {
+    z-index: 2;
+    position: absolute;
+    padding-left: 38vw;
+    padding-top: 18vh;
+    font-family: Eurofurence;
+    font-size: 13vh;
+}
+
+#start_sheep {
+    z-index: 2;
+    position: absolute;
+    height: 22vh;
+    width: 29vh;
+    padding-left: 43vw;
+    padding-top: 40vh;
+    filter: opacity(90%);
+}
+
+#start_text {
+    z-index: 2;
+    position: absolute;
+    padding-left: 42.5vw;
+    padding-top: 63vh;
+    width: 40vh;
+    font-family: Eurofurence;
+    font-size: 6.75vh;
 }
