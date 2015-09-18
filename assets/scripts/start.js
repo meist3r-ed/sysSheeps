@@ -1,6 +1,7 @@
 function start(num){
+    var language = setLanguage(num);
     enter();
-    greet(num);
+    greet(language);
 
     function enter(){
         var overlay = document.getElementById("start");
@@ -14,22 +15,29 @@ function start(num){
         bg.style.filter = "blur(0px)";
     }
 
-    function greet(num){
-        var greet = "";
-
-        switch (num){
-            case 1:
-                greet = "Welcome!";
-                break;
-            case 2:
-                greet = "Bem vindo!";
-                break;
-            case 3:
-                greet = "Wilkommen!";
-                break;
-        }
-
-        document.getElementById("greet").innerHTML = greet;
+    function greet(lang){
+        var greet = {"english": "Welcome!",
+                     "portugues": "Bem vindo!",
+                     "deutsch": "Willkommen!"};
+        document.getElementById("greet").innerHTML = greet[lang];
         document.getElementById("greet").style.animation = "greet_text 2s forwards 2s";
     }
+}
+
+function setLanguage(num){
+    var lang = "";
+
+    switch(num){
+        case 1:
+            lang = "english";
+            break;
+        case 2:
+            lang = "portugues";
+            break;
+        case 3:
+            lang = "deutsch";
+            break;
+    }
+    
+    return lang;
 }
