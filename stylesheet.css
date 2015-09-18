@@ -31,8 +31,9 @@ html {
 
 #start_content {
     position: absolute;
-    margin-top: 14vh;
-    margin-left: 32vw;
+    margin: auto;
+    margin-top: 15vh;
+    margin-left: 31vw;
 }
 
 #background {
@@ -61,7 +62,6 @@ html {
 #glass_text {
     z-index: 2;
     position: relative;
-    text-align: center;
     font-family: Eurofurence;
     font-size: 13vh;
 }
@@ -71,7 +71,8 @@ html {
     position: relative;
     background: url("assets/imgs/start_sheep.png") left center;
     background-size: 192px 152px;
-    margin: -8vh -1vw 0vw 22vh;
+    margin: auto;
+    margin-top: -9vh;
     height: 152px;
     width: 192px;
     filter: opacity(90%);
