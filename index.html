@@ -2,20 +2,48 @@
 <html>
     <head>
         <title>SysSheeps</title>
+        <meta charset="utf-8"/>
         <link type="text/css" rel="stylesheet" href="stylesheet.css"></link>
+        <link type="text/css" rel="stylesheet" href="animations.css"></link>
     </head>
 
     <body>
-        <div id="background"></div>
-        <div id="start" onclick="start()">
-            <div id="glass_frame"></div>
-            <h1 id="glass_text">SysSheeps</h1>
-            <img id="start_sheep" src="assets/imgs/start_sheep.png"></img>
-            <span id="start_text">click to start</span>
+        <!-- PAGE CONTENT -->
+        <div id="main">
+            <h1 id="greet"></h1>
+            <div id="background"></div>
+
+            <!-- CONTENT GOES HERE -->
+            <div id "content">
+            <div>
         </div>
 
-        <div id="main">
+        <!-- GLASS FRAME -->
+        <div id="start">
+            <div id="glass_frame"></div>
+            <span id="start_content">
+                <span id="start_text">
+                    <table>
+                        <tr>
+                            <h1 id="glass_text">SysSheeps</h1>
+
+                        </tr>
+                        <tr>
+                            <div id="start_sheep"></div>
+                        </tr>
+                    </table>
+
+                    <table style="border-spacing: 20px 0">
+                        <tr>
+                            <td class="lang" onclick="start(1)">english</td>
+                            <td class="lang" onclick="start(2)">português</td>
+                            <td class="lang" onclick="start(3)">deutsch</td>
+                        </tr>
+                    </table>
+                </span>
+            </span>
         </div>
     </body>
+    <script type="text/javascript" src="assets/scripts/jquery-1.11.3.js"></script>
     <script type="text/javascript" src="assets/scripts/start.js"></script>
 </html>

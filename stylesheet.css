@@ -8,13 +8,31 @@ html {
     width: 100vw;
 }
 
+/* Glass Frame Styles */
+/* ############################################################## */
+.lang {
+    /*text-shadow: 0px 0px 0px white;*/
+    transition: text-shadow 0.3s ease;
+}
+
+.lang:hover{
+    text-shadow: 0px 0px 5px blue;
+}
+
 #start {
     position: absolute;
+    margin: auto;
     top: 0px;
     left: 0px;
     color: #333333;
     transform: translate(0,0);
-    transition: transform 2s ease-out;
+    transition: transform 2s ease .1s;
+}
+
+#start_content {
+    position: absolute;
+    margin-top: 14vh;
+    margin-left: 32vw;
 }
 
 #background {
@@ -42,29 +60,40 @@ html {
 
 #glass_text {
     z-index: 2;
-    position: absolute;
-    padding-left: 38vw;
-    padding-top: 18vh;
+    position: relative;
+    text-align: center;
     font-family: Eurofurence;
     font-size: 13vh;
 }
 
 #start_sheep {
     z-index: 2;
-    position: absolute;
-    height: 22vh;
-    width: 29vh;
-    padding-left: 43vw;
-    padding-top: 40vh;
+    position: relative;
+    background: url("assets/imgs/start_sheep.png") left center;
+    background-size: 192px 152px;
+    margin: -8vh -1vw 0vw 22vh;
+    height: 152px;
+    width: 192px;
     filter: opacity(90%);
+    transition: transform 1.5s ease-in;
 }
 
 #start_text {
     z-index: 2;
-    position: absolute;
-    padding-left: 42.5vw;
-    padding-top: 63vh;
-    width: 40vh;
+    position: relative;
     font-family: Eurofurence;
-    font-size: 6.75vh;
+    font-size: 7vh;
+}
+/* ############################################################## */
+
+#greet {
+    z-index: 1;
+    position: relative;
+    color: #111111;
+    font-family: Eurofurence;
+    font-size: 10vw;
+    text-align: center;
+    margin-top: 35vh;
+    filter: opacity(0%);
+    transition: filter 1s ease 2s;
 }

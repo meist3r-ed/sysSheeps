@@ -1,0 +1,26 @@
+@keyframes start_anim {
+    0%{
+        transform: translate(0,0vh);
+    }
+    25%{
+        transform: translate(0,3vh);
+    }
+    100%{
+        transform: translate(0,-100vh);
+    }
+}
+
+@keyframes sheep_start {
+    100% {
+        background-position: -1152px;
+    }
+}
+
+@keyframes greet_text {
+    25%, 75% {
+        filter: opacity(100%);
+    }
+    100% {
+        filter: opacity(0%);
+    }
+}
