@@ -6,12 +6,14 @@ function start(num){
     function enter(){
         var overlay = document.getElementById("start");
         var bg = document.getElementById("background");
+        var start_content = document.getElementById("start_content");
         var start_sheep = document.getElementById("start_sheep");
         //overlay.style.animation = "start_anim 2.5s ease 0s 1 running forwards";
         start_sheep.style.background = "url('assets/imgs/start_sheep_walk.png') left"
         start_sheep.style.animation = "sheep_start .8s steps(6) infinite";
         start_sheep.style.transform = "translate(80vh,0)";
         overlay.style.transform = "translate(0,-100vh)";
+        start_content.style.transform = "translate(0,-150vh)";
         bg.style.filter = "blur(0px)";
     }
 
@@ -19,12 +21,9 @@ function start(num){
         var greet = {"english": "Welcome!",
                      "portugues": "Bem vindo!",
                      "deutsch": "Willkommen!"};
-        if(lang === "deutsch")
-            document.getElementById("greet").style.marginLeft = "23vw";
-        if(lang === "english")
-            document.getElementById("greet").style.marginLeft = "29vw";
         document.getElementById("greet").innerHTML = greet[lang];
         document.getElementById("greet").style.animation = "greet_text 2s forwards 2s";
+        document.getElementById("fields").style.filter = "opacity(90%)";
     }
 }
 
