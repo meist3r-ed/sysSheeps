@@ -1,108 +1,96 @@
-3<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>SysSheeps</title>
-    <meta charset="utf-8"/>
-    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-    <link type="text/css" rel="stylesheet" href="animations.css"/>
-    <script type="text/javascript" src="assets/scripts/jquery-1.11.3.js"></script>
-    <script type="text/javascript" src="assets/scripts/start.js"></script>
-  </head>
+    <head>
+        <title>SysSheeps</title>
+        <meta charset="utf-8"/>
+        <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+        <link type="text/css" rel="stylesheet" href="animations.css"/>
+        <script type="text/javascript" src="assets/scripts/jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="assets/scripts/start.js"></script>
+    </head>
 
-  <body>
-    <div id="background"></div>
+    <body>
+        <div id="background"></div>
 
-    <!-- PAGE CONTENT -->
-    <div id="main">
-      <!-- CONTENT GOES HERE -->
-      <div class="content">
-        <!-- Z-Indexes available: 1 to 98-->
-        <table class="content" id="fields">
-         <tr>
-             <!-- Aqui entra a primeira ovelha, seja div ou img puro,
-             etc etc -->
-             <tr>
-               <td class="top-fields" id="topL">
-                 <p>aqui vai a imagem da primeira ovelha</p>
-               </td>
-               <td class="top-fields" id="topM">
-                 <p>esses buttons precisam estar centralizados</p>
-                 <button id="button1" onclick="Function1()">Funcao 1</button>
-                 <br>
-                 <button id="button2" onclick="Function2()">Funcao 2</button>
-                 <br>
-                 <button id="button3" onclick="Function3()">Funcao 3</button>
-                 <br>
-                 <button id="button4" onclick="Function4()">Funcao
-                 4(POR ALGUMA RAZAO ESSE BOTAO NAO FUNCIONA =()</button>
-               </td>
-               <td class="top-fields" id="topR">
-                 <p>aqui vai a imagem da ovelha clonada</p>
-               </td>
-             </tr>
+        <!-- PAGE CONTENT -->
+        <div id="main">
+            <!-- CONTENT GOES HERE -->
+            <div class="content">
+                <!-- Z-Indexes available: 1 to 98-->
+                <table class="content" id="fields">
+                    <tr>
+                        <td class="top-fields" id="topL">
+                            <!-- Aqui entra a primeira ovelha, seja div ou img puro, etc etc -->
+                            <p>aqui vai a imagem da primeira ovelha</p>
+                          </td>
+                          <td class="top-fields" id="topM">
+                            <p>esses buttons precisam estar centralizados</p>
+                            <button id="button1" onclick="Function1()">Funcao 1</button><br/>
+                            <button id="button2" onclick="Function2()">Funcao 2</button><br/>
+                            <button id="button3" onclick="Function3()">Funcao 3</button><br/>
+                            <button id="button4" onclick="Function4()">Funcao 4</button><br/>
 
-             <!-- vou colocar os scripts aqui para teste por enquanto
-             -->
-             <script>
+                            <!-- vou colocar os scripts aqui para teste por enquanto -->
+                            <script>
+                                function Function1() {
+                                    document.getElementById("bottomM").style.color="red";
+                                }
 
-               function Function1() {
-                  document.getElementById("bottomM").style.color="red";
-               }
+                                function Function2() {
+                                    document.getElementById("bottomM").style.color="green";
+                                }
 
-               function Function2() {
-                  document.getElementById("bottomM").style.color="green";
-               }
+                                function Function3() {
+                                    document.getElementById("bottomM").style.color="yellow";
+                                }
 
-               function Function3() {
-                  document.getElementById("bottomM").style.color="yellow";
-               }
-
-               function Function4() {
-                  document.getElementById("bottomM").style.color="black";
-               }
-
-
-             </script>
-             <!-- Aqui entra a ovelha clonada, seja div ou img puro,
-             etc etc -->
-           </th>
-         </tr>
-         <tr>
-           <td class="bottom-fields" id="bottomL">
-             <p>AQUI VAI QUAL INFORMACAO???</p>
-            </td>
-           <td class="bottom-fields" id="bottomM">
-             <p>AQUI VAI A TABELA DE INFORMACOES(MAIS QUAIS)<p>
-            </td>
-           <td class="bottom-fields" id="bottomR">
-             <p>AQUI VAI QUAL INFORMACAO???</p>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <h1 id="greet"></h1>
+                                    function Function4() {
+                                    document.getElementById("bottomM").style.color="black";
+                                }
+                            </script>
+                        </td>
+                        <td class="top-fields" id="topR">
+                            <!-- Aqui entra a ovelha clonada, seja div ou img puro, etc etc -->
+                            <p>aqui vai a imagem da ovelha clonada</p>
+                        </td>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="bottom-fields" id="bottomL">
+                        <p>AQUI VAI QUAL INFORMACAO???</p>
+                        </td>
+                    <td class="bottom-fields" id="bottomM">
+                        <p>AQUI VAI A TABELA DE INFORMACOES(MAIS QUAIS)<p>
+                        </td>
+                    <td class="bottom-fields" id="bottomR">
+                        <p>AQUI VAI QUAL INFORMACAO???</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h1 id="greet"></h1>
     </div>
 
     <!-- GLASS FRAME -->
     <div id="start">
-      <div id="glass_frame"></div>
-      <table id="start_content">
-        <tr>
-          <th colspan="3">
-            <h1 id="glass_text">SysSheeps</h1>
-          </th>
-        </tr>
-        <tr>
-          <td colspan="3">
-            <div id="start_sheep"></div>
-          </td>
-        </tr>
-        <tr>
-          <td class="lang" onclick="start(1)">english</td>
-          <td class="lang" onclick="start(2)">português</td>
-          <td class="lang" onclick="start(3)">deutsch</td>
-        </tr>
-      </table>
-    </div>
-  </body>
+        <div id="glass_frame"></div>
+            <table id="start_content">
+                <tr>
+                <th colspan="3">
+                        <h1 id="glass_text">SysSheeps</h1>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div id="start_sheep"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lang" onclick="start(1)">english</td>
+                    <td class="lang" onclick="start(2)">português</td>
+                    <td class="lang" onclick="start(3)">deutsch</td>
+                </tr>
+            </table>
+        </div>
+    </body>
 </html>

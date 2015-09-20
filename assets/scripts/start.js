@@ -23,7 +23,7 @@ function start(num){
                      "deutsch": "Willkommen!"};
         document.getElementById("greet").innerHTML = greet[lang];
         document.getElementById("greet").style.animation = "greet_text 2s forwards 2s";
-        document.getElementById("fields").style.filter = "opacity(90%)";
+        document.getElementById("fields").style.filter = "opacity(100%)";
     }
 }
 
