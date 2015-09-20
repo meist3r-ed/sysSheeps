@@ -19,6 +19,10 @@ function start(num){
         var greet = {"english": "Welcome!",
                      "portugues": "Bem vindo!",
                      "deutsch": "Willkommen!"};
+        if(lang === "deutsch")
+            document.getElementById("greet").style.marginLeft = "23vw";
+        if(lang === "english")
+            document.getElementById("greet").style.marginLeft = "29vw";
         document.getElementById("greet").innerHTML = greet[lang];
         document.getElementById("greet").style.animation = "greet_text 2s forwards 2s";
     }
@@ -38,6 +42,6 @@ function setLanguage(num){
             lang = "deutsch";
             break;
     }
-    
+
     return lang;
 }

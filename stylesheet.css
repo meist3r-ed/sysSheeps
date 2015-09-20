@@ -23,6 +23,7 @@ html {
 }
 
 #start {
+    z-index: 100;
     position: absolute;
     margin: auto;
     top: 0px;
@@ -40,7 +41,7 @@ html {
 }
 
 #background {
-    z-index: 0;
+    z-index: auto;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -53,7 +54,7 @@ html {
 }
 
 #glass_frame {
-    z-index: 1;
+    z-index: 100;
     position: absolute;
     height: 100vh;
     width: 100vw;
@@ -63,14 +64,14 @@ html {
 }
 
 #glass_text {
-    z-index: 2;
+    z-index: 102;
     position: relative;
     font-family: Eurofurence;
     font-size: 13vh;
 }
 
 #start_sheep {
-    z-index: 2;
+    z-index: 102;
     position: relative;
     background: url("assets/imgs/start_sheep.png") left center;
     background-size: 192px 152px;
@@ -83,7 +84,7 @@ html {
 }
 
 #start_text {
-    z-index: 2;
+    z-index: 102;
     position: relative;
     font-family: Eurofurence;
     font-size: 7vh;
@@ -91,13 +92,20 @@ html {
 /* ############################################################## */
 
 #greet {
-    z-index: 1;
-    position: relative;
+    z-index: 99;
+    position: absolute;
     color: #111111;
     font-family: Eurofurence;
     font-size: 10vw;
     text-align: center;
     margin-top: 35vh;
+    margin-left: 28vw;
     filter: opacity(0%);
     transition: filter 1s ease 2s;
+}
+
+.content {
+    z-index: 1;
+    position: relative;
+    margin-top: 0px; margin-left: 0px;
 }
