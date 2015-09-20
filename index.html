@@ -8,7 +8,6 @@
         <script type="text/javascript" src="assets/scripts/jquery-1.11.3.js"></script>
         <script type="text/javascript" src="assets/scripts/start.js"></script>
     </head>
-
     <body>
         <div id="background"></div>
 
@@ -22,61 +21,117 @@
                         <td class="top-fields" id="topL">
                             <!-- Aqui entra a primeira ovelha, seja div ou img puro, etc etc -->
                             <p>aqui vai a imagem da primeira ovelha</p>
-                          </td>
-                          <td class="top-fields" id="topM">
+                        </td>
+                        <td class="top-fields" id="topM">
                             <p>esses buttons precisam estar centralizados</p>
-                            <button id="button1" onclick="Function1()">Funcao 1</button><br/>
-                            <button id="button2" onclick="Function2()">Funcao 2</button><br/>
-                            <button id="button3" onclick="Function3()">Funcao 3</button><br/>
-                            <button id="button4" onclick="Function4()">Funcao 4</button><br/>
-
+                            <form action="">
+                                <input type="checkbox" name="checkbox1" value="Flag1" checked>Flag 1<br>
+                                <input type="checkbox" name="checkbox2" value="Flag2">Flag 2<br>
+                                <input type="checkbox" name="checkbox3" value="Flag3">Flag 3<br>
+                                <input type="checkbox" name="checkbox4" value="Flag4">Flag 4<br>
+                                <input type="checkbox" name="checkbox5" value="Flag5">Flag 5<br>
+                                <input type="checkbox" name="checkbox6" value="Flag6">Flag 6<br>
+                            </form>
                             <!-- vou colocar os scripts aqui para teste por enquanto -->
                             <script>
-                                function Function1() {
-                                    document.getElementById("bottomM").style.color="red";
-                                }
+                             function Function1() {
+                                 document.getElementById("bottomM").style.color="red";
+                             }
 
-                                function Function2() {
-                                    document.getElementById("bottomM").style.color="green";
-                                }
+                             function Function2() {
+                                 document.getElementById("bottomM").style.color="green";
+                             }
 
-                                function Function3() {
-                                    document.getElementById("bottomM").style.color="yellow";
-                                }
+                             function Function3() {
+                                 document.getElementById("bottomM").style.color="yellow";
+                             }
 
-                                    function Function4() {
-                                    document.getElementById("bottomM").style.color="black";
-                                }
+                             function Function4() {
+                                 document.getElementById("bottomM").style.color="black";
+                             }
                             </script>
                         </td>
                         <td class="top-fields" id="topR">
                             <!-- Aqui entra a ovelha clonada, seja div ou img puro, etc etc -->
                             <p>aqui vai a imagem da ovelha clonada</p>
                         </td>
-                    </th>
-                </tr>
-                <tr>
-                    <td class="bottom-fields" id="bottomL">
-                        <p>AQUI VAI QUAL INFORMACAO???</p>
+</th>
+                    </tr>
+                    <tr>
+                        <td class="bottom-fields" id="bottomL">
+                            <button id="button1" onclick="FunctionClone()">Clonar </button><br/>
                         </td>
-                    <td class="bottom-fields" id="bottomM">
-                        <p>AQUI VAI A TABELA DE INFORMACOES(MAIS QUAIS)<p>
-                        </td>
-                    <td class="bottom-fields" id="bottomR">
-                        <p>AQUI VAI QUAL INFORMACAO???</p>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <h1 id="greet"></h1>
-    </div>
 
-    <!-- GLASS FRAME -->
-    <div id="start">
-        <div id="glass_frame"></div>
+                        <!-- Tabela com as informacoes de cada ovelha -->
+
+                        <td class="bottom-fields" id="bottomM">
+                            <p> Essa tabela precisa ser centralizada. Alem
+                                disso, tirar ou melhorar a qualidade das bordas
+                                + css pra deixar ela bonita, viu vinicius</p>
+                            <table border="1">
+                                <tr>
+                                    <th>Atributos</th>
+                                    <th>Ovelha 1</th>
+                                    <th>Ovelha 2</th>
+                                </tr>
+                                <tr>
+                                    <td>Atributo 2</td>
+                                    <td>valor1</td>
+                                    <td>valor2</td>
+                                </tr>
+                                <tr>
+                                    <td>Atributo 2</td>
+                                    <td>valor1</td>
+                                    <td>valor2</td>
+                                </tr>
+                                <tr>
+                                    <td>Atributo 3</td>
+                                    <td>valor1</td>
+                                    <td>valor2</td>
+                                </tr>
+                                <tr>
+                                    <td>Atributo 3</td>
+                                    <td>valor1</td>
+                                    <td>valor2</td>
+                                </tr>
+                                <tr>
+                                    <td>Atributo 3</td>
+                                    <td>valor1</td>
+                                    <td>valor2</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Atributo 3</td>
+                                    <td>valor1</td>
+                                    <td>valor2</td>
+                                </tr>
+                            </table>
+
+
+                        </td>
+
+                        <!-- textarea onde vai ser o logger de eventos-->
+                        <td class="bottom-fields" id="bottomR">
+                            <fieldset>
+	                            <legend>Log de informacoes</legend>
+	                            <label for ="log_label"></label>Eventos:  <br>
+	                            <textarea cols=60 id="log_textarea" rows="10"
+	                                      name="log" maxlength="500" wrap="hard"
+	                                      placeholder="ovelha, ovelhas everywhere! " readonly></textarea>
+	                        </fieldset>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <h1 id="greet"></h1>
+        </div>
+
+        <!-- GLASS FRAME -->
+        <div id="start">
+            <div id="glass_frame"></div>
             <table id="start_content">
                 <tr>
-                <th colspan="3">
+                    <th colspan="3">
                         <h1 id="glass_text">SysSheeps</h1>
                     </th>
                 </tr>
