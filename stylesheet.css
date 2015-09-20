@@ -137,4 +137,18 @@ html {
 #bottomM {
     width: 30vw;
 }
+
+.top-fields{
+    height: 35vh;
+    width: 20vw;
+    background-color: #cccccc;
+    border-radius: 10px;
+}
+
+#topM {
+    width: 30vw;
+}
+
+
+
 /* ############################################################## */
