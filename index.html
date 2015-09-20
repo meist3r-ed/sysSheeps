@@ -10,56 +10,42 @@
     </head>
     <body>
         <div id="background"></div>
-
         <!-- PAGE CONTENT -->
         <div id="main">
             <!-- CONTENT GOES HERE -->
             <div class="content">
                 <!-- Z-Indexes available: 1 to 98-->
+
                 <table class="content" id="fields">
                     <tr>
+                        <!-- IMAGEM E TELA DA OVELHA ANTES DO CLONE-->
                         <td class="top-fields" id="topL">
                             <!-- Aqui entra a primeira ovelha, seja div ou img puro, etc etc -->
                             <p>aqui vai a imagem da primeira ovelha</p>
                         </td>
+                        <!--IMAGEM DA MAQUINA E BUTTONS DAS FLAGS-->
                         <td class="top-fields" id="topM">
-                            <p>esses buttons precisam estar centralizados</p>
-                            <form action="">
-                                <input type="checkbox" name="checkbox1" value="Flag1" checked>Flag 1<br>
-                                <input type="checkbox" name="checkbox2" value="Flag2">Flag 2<br>
-                                <input type="checkbox" name="checkbox3" value="Flag3">Flag 3<br>
-                                <input type="checkbox" name="checkbox4" value="Flag4">Flag 4<br>
-                                <input type="checkbox" name="checkbox5" value="Flag5">Flag 5<br>
-                                <input type="checkbox" name="checkbox6" value="Flag6">Flag 6<br>
+                            <p>criar uma funcao que ao clique do botao clone, verifica qual checkbox esta ativado</p>
+                            <form>
+                                <input id="flag1" type="checkbox" name="flag1" value="flag1">Flag1</input></br>
+                                <input id="flag2" type="checkbox" name="flag2" value="flag2">Flag2</input></br>
+                                <input id="flag2" type="checkbox" name="flag3" value="flag3">Flag3</input></br>
+                                <input id="flag3" type="checkbox" name="flag4" value="flag4">Flag4</input></br>
+                                <input id="flag4" type="checkbox" name="flag5" value="flag5">Flag5</input></br>
+                                <input id="flag5" type="checkbox" name="flag6" value="flag6">Flag6</input></br>
+                                <button id="clonebutton" type="button" id="CloneButton">Clonar</button>
                             </form>
                             <!-- vou colocar os scripts aqui para teste por enquanto -->
-                            <script>
-                             function Function1() {
-                                 document.getElementById("bottomM").style.color="red";
-                             }
-
-                             function Function2() {
-                                 document.getElementById("bottomM").style.color="green";
-                             }
-
-                             function Function3() {
-                                 document.getElementById("bottomM").style.color="yellow";
-                             }
-
-                             function Function4() {
-                                 document.getElementById("bottomM").style.color="black";
-                             }
-                            </script>
                         </td>
                         <td class="top-fields" id="topR">
                             <!-- Aqui entra a ovelha clonada, seja div ou img puro, etc etc -->
-                            <p>aqui vai a imagem da ovelha clonada</p>
+                            <p id="teste">aqui vai a imagem da ovelha clonada</p>
                         </td>
 </th>
                     </tr>
                     <tr>
                         <td class="bottom-fields" id="bottomL">
-                            <button id="button1" onclick="FunctionClone()">Clonar </button><br/>
+                            <p>Aqui vai a legenda de todas as flags</p>
                         </td>
 
                         <!-- Tabela com as informacoes de cada ovelha -->
@@ -106,10 +92,7 @@
                                     <td>valor2</td>
                                 </tr>
                             </table>
-
-
                         </td>
-
                         <!-- textarea onde vai ser o logger de eventos-->
                         <td class="bottom-fields" id="bottomR">
                             <fieldset>
@@ -147,5 +130,9 @@
                 </tr>
             </table>
         </div>
+        <script>
+
+         /* Funcao que acontec ao clique do botao clone verifica qual checkbox esta marcado e faz algo com isso */
+        </script>
     </body>
 </html>
