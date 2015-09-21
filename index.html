@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
     <head>
         <title>SysSheeps</title>
@@ -21,25 +21,31 @@
                         <!-- IMAGEM E TELA DA OVELHA ANTES DO CLONE-->
                         <td class="top-fields" id="topL">
                             <!-- Aqui entra a primeira ovelha, seja div ou img puro, etc etc -->
-                            <p>aqui vai a imagem da primeira ovelha</p>
+                            <p>aqui vai a imagem da primeira
+                              ovelha(ver se a qualidade dessa ovlha
+                              pode sr melhorada (ficou assim pq tive
+                              que escalar para um tamanh maior) )</p>
+                            <img src="assets/imgs/sheepstatic_150px.png">
                         </td>
                         <!--IMAGEM DA MAQUINA E BUTTONS DAS FLAGS-->
                         <td class="top-fields" id="topM">
-                            <p>criar uma funcao que ao clique do botao clone, verifica qual checkbox esta ativado</p>
-                            <form>
-                                <input id="flag1" type="checkbox" name="flag1" value="flag1">Flag1</input></br>
-                                <input id="flag2" type="checkbox" name="flag2" value="flag2">Flag2</input></br>
-                                <input id="flag2" type="checkbox" name="flag3" value="flag3">Flag3</input></br>
-                                <input id="flag3" type="checkbox" name="flag4" value="flag4">Flag4</input></br>
-                                <input id="flag4" type="checkbox" name="flag5" value="flag5">Flag5</input></br>
-                                <input id="flag5" type="checkbox" name="flag6" value="flag6">Flag6</input></br>
-                                <button id="clonebutton" type="button" id="CloneButton">Clonar</button>
-                            </form>
+                            <p>criar uma funcao que ao clique do botao
+                                clone, verifica qual checkbox esta
+                                ativado</p>
+                            <input id="flag1" type="checkbox" name="flag1" value="flag1">Flag1</input></br>
+                            <input id="flag2" type="checkbox" name="flag2" value="flag2">Flag2</input></br>
+                            <input id="flag2" type="checkbox" name="flag3" value="flag3">Flag3</input></br>
+                            <input id="flag3" type="checkbox" name="flag4" value="flag4">Flag4</input></br>
+                            <input id="flag4" type="checkbox" name="flag5" value="flag5">Flag5</input></br>
+                            <input id="flag5" type="checkbox" name="flag6" value="flag6">Flag6</input></br>
+                            <button id="cloneButton" onclick="ButtonClone()">Exemplo</button>
+
                             <!-- vou colocar os scripts aqui para teste por enquanto -->
                         </td>
                         <td class="top-fields" id="topR">
                             <!-- Aqui entra a ovelha clonada, seja div ou img puro, etc etc -->
-                            <p id="teste">aqui vai a imagem da ovelha clonada</p>
+                            <p id="demo" onclick="myFunction()">Click me to change my text color.</p>
+                            <img src="assets/imgs/sheepstatic_150px.png">
                         </td>
 </th>
                     </tr>
@@ -99,7 +105,7 @@
 	                            <legend>Log de informacoes</legend>
 	                            <label for ="log_label"></label>Eventos:  <br>
 	                            <textarea cols=60 id="log_textarea" rows="10"
-	                                      name="log" maxlength="500" wrap="hard"
+	                                      name="log" maxlength="400" wrap="hard"
 	                                      placeholder="ovelha, ovelhas everywhere! " readonly></textarea>
 	                        </fieldset>
                         </td>
@@ -132,7 +138,15 @@
         </div>
         <script>
 
-         /* Funcao que acontec ao clique do botao clone verifica qual checkbox esta marcado e faz algo com isso */
+         /* funcao TESTE que verifica quais flags estao marcadas e as mostra*/
+         function ButtonClone() {
+             function changeText() {
+                 var f1 = document.getElementById('flag1');
+                 if(f1.checked)
+                     document.getElementById("teste").style.color = "red";
+             }
+         }
+
         </script>
     </body>
 </html>
